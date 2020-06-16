@@ -528,8 +528,15 @@ template {
 }
 
 @font-face {
-  font-family: 'Monsterrat';
-  src: url("../fonts/Monsterrat-Bold.ttf");
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
@@ -549,4 +556,68 @@ body {
   font-weight: normal;
   font-size: 18px;
   color: #4E5983;
+}
+
+/*Header*/
+
+.header {
+  font-family: 'Rubik', sans-serif;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 35px 0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu__item {
+  list-style: none;
+  margin-right: 4.5rem;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #4E5983;
+}
+
+.brand {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: #160647;
+  line-height: 24px;
+  display: -webkit-box;
+  display: flex;
+}
+
+.brand span {
+  font-weight: bold;
+}
+
+.brand__logo {
+  margin-right: 15px;
+}
+
+.auth__enter {
+  margin-right: 2rem;
+}
+
+.auth__registration {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4E5983;
+  padding: 18px 14px;
+  border-radius: 9px;
+  background: #F4EFFF;
+  color: #4E5983;
+  border: none;
+  cursor: pointer;
 }

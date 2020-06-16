@@ -1,6 +1,6 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now"
 @import "fonts"
-
+@import "colors"
 
 .wrapper
     max-width: 1200px
@@ -14,6 +14,55 @@ body
     font-family: 'Rubik', sans-serif
     font-weight: normal
     font-size: 18px
-    color: #4E5983
+    color: $color-main
 
 
+/*Header*/
+.header
+    font-family: 'Rubik', sans-serif
+    display: flex
+    justify-content: space-around
+    align-items: center
+    font-size: 14px
+    padding: 35px 0
+
+.menu
+    display: flex
+    padding-left: 0
+    margin: 0
+    
+    &__item
+        list-style: none
+        margin-right: 4.5rem
+
+    &__link
+        text-decoration: none
+        color: $color-main
+
+.brand
+    font-family: 'Montserrat'
+    font-size: 20px
+    color: #160647
+    line-height: 24px
+    display: flex
+    span
+        font-weight: bold
+
+    &__logo
+        margin-right: 15px
+
+.auth
+    &__enter
+        margin-right: 2rem
+
+    &__registration
+        font-family: 'Rubik', sans-serif
+        font-weight: 500
+        font-size: 16px
+        color: $color-main
+        padding: 18px 14px
+        border-radius: 9px
+        background: #F4EFFF
+        color: #4E5983
+        border: none
+        cursor: pointer
