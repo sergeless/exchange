@@ -541,8 +541,21 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*=============================Common=============================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
 }
@@ -558,7 +571,16 @@ body {
   color: #4E5983;
 }
 
-/*Header*/
+h1 {
+  font-size: 6rem;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 111.9%;
+}
+
+/*================================Header========================================================*/
 
 .header {
   font-family: 'Rubik', sans-serif;
@@ -605,11 +627,146 @@ body {
 /*=================================Main=====================================================*/
 
 .main {
-  background: linear-gradient(157.1deg, #562EC2 29.59%, #A07EFE 73.59%);
+  background: url("../img/common.jpg") no-repeat top center;
+  background-size: cover;
   border-radius: 17px;
-  padding: 113px 0 84px;
+  padding: 7.4vmax 0 5.5vmax;
+  text-align: center;
 }
 
-h1 {
+.main__title {
+  width: 850px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main__description {
+  font-size: 1.9rem;
+  line-height: 2.3rem;
   color: #FFFFFF;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.main__block {
+  max-width: 80%;
+  position: relative;
+  margin: 5.5rem auto 0;
+}
+
+.block1 {
+  padding: 7% 7% 6% 9%;
+  background: #FFFFFF;
+  opacity: 0.8;
+  border: 4px solid #F7F8FD;
+  border-radius: 2.6rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  text-align: left;
+  color: #4E5983;
+}
+
+.block2 {
+  max-width: 92%;
+  background: #FFFFFF;
+  height: 2rem;
+  opacity: 0.2;
+  margin: auto;
+  border: 4px solid #F7F8FD;
+  border-radius: 0 0 2.6rem 2.6rem;
+}
+
+.block3 {
+  width: 88%;
+  height: 4rem;
+  background: #FFFFFF;
+  opacity: 0.2;
+  border: 4px solid #F7F8FD;
+  border-radius: 0 0 2.6rem 2.6rem;
+  margin: auto;
+  position: absolute;
+  bottom: -2rem;
+  left: 6%;
+}
+
+.exchange__give {
+  border-bottom: 1px solid #D6DCE2;
+}
+
+.exchange__get {
+  border-bottom: 1px solid #D6DCE2;
+}
+
+.exchange__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 4rem;
+}
+
+.exchange__text {
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.5;
+}
+
+.exchange__commission {
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.5;
+  margin-left: 15px;
+}
+
+.exchange__sum {
+  font-family: 'Proxima Nova';
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.015em;
+  color: #094067;
+  margin: 2rem 0;
+  border: none;
+  border-right: 1px solid #CFD4DA;
+  width: 170px;
+}
+
+.exchange__field {
+  display: -webkit-box;
+  display: flex;
+}
+
+.exchange__currency {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.exchange__name {
+  margin-left: 2rem;
+  margin-right: 7px;
+  text-transform: uppercase;
+}
+
+.exchange__arrows {
+  margin: 0 4rem 2.5rem;
+}
+
+.exchange__vector {
+  cursor: pointer;
+}
+
+.exchange__btn {
+  padding: 19px 27px;
+  background: linear-gradient(163.94deg, #562EC2 29.59%, #A07EFE 73.59%);
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 9px;
+  margin-left: 7rem;
+  border: none;
+  cursor: pointer;
 }

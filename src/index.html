@@ -23,12 +23,45 @@
             </div>
         </header>
         <section class="main">
-            <h1>Мультивалютный обменный сервис 24/7</h1>
-            <p class="main__title">Быстрый обмен без скрытых комиссий</p>
-            <div class="main__calculate">
-
+            <div class="main__title">
+                <h1>Мультивалютный обменный сервис 24/7</h1>
+                <p class="main__description">Быстрый обмен без скрытых комиссий</p>
             </div>
-        </section>
+            <div class="main__block">
+                <div class="block1">
+                    <div class="exchange exchange__give">
+                        <div class="exchange__title">Вы отдаете</div>
+                        <div class="exchange__text">Сумма</div>
+                        <div class="exchange__field">
+                            <input type="text" class="exchange__sum" placeholder="1000.00">
+                            <span class="exchange__currency">
+                                <img src="./img/sber.svg" alt="sberbank"> 
+                                <div class="exchange__name">rub</div>
+                                <img src="./img/vector.svg" alt="vector" class="exchange__vector">
+                            </span>
+                        </div>
+                    </div>
+                    <img class="exchange__arrows" src="../img/arrows.svg" alt="arrows">
+                    <div class="exchange exchange__get">
+                        <div class="exchange__title">Вы получете <span class="exchange__commission">c учетом комиссии ПС (0.5%)</span></div>
+                        <div class="exchange__text">Сумма</div>
+                        <div class="exchange__field">
+                            <input type="text" class="exchange__sum" placeholder="1000.00">
+                            <div class="exchange__currency">
+                                <img src="./img/qiwi.svg" alt="qiwi">
+                                <div class="exchange__name">rub</div>
+                                <img src="./img/vector.svg" alt="vector" class="exchange__vector">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="exchange__btn">Обменять</button>
+                </div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+            </div>
+
+    </div>
+    </section>
     </div>
     <script src="js/main.js"></script>
 </body>
