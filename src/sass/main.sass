@@ -7,8 +7,14 @@
 *
     box-sizing: border-box
     
-.wrapper
-    max-width: 1400px
+#wrapper
+    width: 100%
+    position: relative
+    max-width: 1600px
+    margin: auto
+
+.container
+    max-width: 1110px
     margin: 0 auto
     position: relative
 
@@ -28,6 +34,15 @@ h1
     font-weight: bold
     font-size: 60px
     line-height: 111.9%
+
+h2
+    font-size: 3.5rem
+    font-weight: 500
+    margin: 0
+    color: $dark-purple
+
+.nowrap
+    white-space: nowrap
 
 /*================================Header========================================================*/
 .header
@@ -71,7 +86,7 @@ h1
     // background: linear-gradient(157.1deg, #562EC2 29.59%, #A07EFE 73.59%)
     background: url('../img/common.jpg') no-repeat top center
     background-size: cover
-    border-radius: 17px
+    // border-radius: 17px
     padding: 7.4vmax 0 5.5vmax
     text-align: center
 
@@ -88,9 +103,9 @@ h1
         margin-bottom: 0
     
     &__block
-        max-width: 80%
+        // max-width: 80%
         position: relative
-        margin: 5.5rem auto 0
+        margin-top: 5.5rem
 
 .block1
     padding: 7% 7% 6% 9%
@@ -190,3 +205,99 @@ h1
         margin-left: 7rem
         border: none
         cursor: pointer
+        
+.adv
+    padding-top: 6.3%
+
+    &__cards
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__title
+        margin-top: 21%
+        margin-bottom: 0
+
+    &__img
+        width: 130px
+        height: 104px
+    
+    &__card
+        flex-basis: 22%
+        min-width: 300px
+
+    &__title
+        font-weight: 500
+        font-size: 2.2rem
+        line-height: 2.6rem
+
+    &__descr
+        font-size: 18px
+        line-height: 166.5%
+        opacity: 0.7
+        margin-top: 10.7%
+        margin-bottom: 0
+
+.history
+    display: flex
+    flex-wrap: wrap
+    padding: 9.9% 0 8%
+    justify-content: space-around
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1)
+
+    &__text
+        flex-basis: 40%
+        min-width: 400px
+
+    &__title
+        font-weight: 500
+        font-size: 3.5rem
+        line-height: 132.4%
+        color: #160647
+
+    &__descr
+        font-size: 1.8rem
+        line-height: 166.5%
+        margin: 0
+
+    &__img
+        max-width: 100%
+    
+    &__wrapper-img
+        display: flex
+        align-items: center
+
+.currency
+    padding: 9.2% 0 4.9%
+
+    &__title
+        text-align: center
+        line-height: 111.9%
+        // color: #160647
+
+    &__cards
+        margin-top: 7.1%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+
+    &__card
+        display: flex
+        flex-basis: 23%
+        min-width: 229px
+        margin-bottom: 85px
+
+        &-img
+            margin-right: 9.2%
+
+    &__money
+        &-title
+            font-size: 16px
+            line-height: 19px
+            color: #A4AABF
+
+        &-sum
+            font-size: 2rem
+            line-height: 155.5%
+            color: $dark-purple
+

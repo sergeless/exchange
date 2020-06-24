@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <header class="header">
-            <a href="#" class="logo"><img src="../img/logo.svg" alt="MoneyExChange"></a>
+            <a href="#" class="logo"><img src="./img/logo.svg" alt="MoneyExChange"></a>
             <nav class="menu">
                 <a class="menu__link" href="#">Компания</a>
                 <a class="menu__link" href="#">Блог</a>
@@ -23,45 +23,139 @@
             </div>
         </header>
         <section class="main">
-            <div class="main__title">
-                <h1>Мультивалютный обменный сервис 24/7</h1>
-                <p class="main__description">Быстрый обмен без скрытых комиссий</p>
-            </div>
-            <div class="main__block">
-                <div class="block1">
-                    <div class="exchange exchange__give">
-                        <div class="exchange__title">Вы отдаете</div>
-                        <div class="exchange__text">Сумма</div>
-                        <div class="exchange__field">
-                            <input type="text" class="exchange__sum" placeholder="1000.00">
-                            <span class="exchange__currency">
-                                <img src="./img/sber.svg" alt="sberbank"> 
-                                <div class="exchange__name">rub</div>
-                                <img src="./img/vector.svg" alt="vector" class="exchange__vector">
-                            </span>
-                        </div>
-                    </div>
-                    <img class="exchange__arrows" src="../img/arrows.svg" alt="arrows">
-                    <div class="exchange exchange__get">
-                        <div class="exchange__title">Вы получете <span class="exchange__commission">c учетом комиссии ПС (0.5%)</span></div>
-                        <div class="exchange__text">Сумма</div>
-                        <div class="exchange__field">
-                            <input type="text" class="exchange__sum" placeholder="1000.00">
-                            <div class="exchange__currency">
-                                <img src="./img/qiwi.svg" alt="qiwi">
-                                <div class="exchange__name">rub</div>
-                                <img src="./img/vector.svg" alt="vector" class="exchange__vector">
+            <div class="container">
+                <div class="main__title">
+                    <h1>Мультивалютный обменный сервис 24/7</h1>
+                    <p class="main__description">Быстрый обмен без скрытых комиссий</p>
+                </div>
+                <div class="main__block">
+                    <div class="block1">
+                        <div class="exchange exchange__give">
+                            <div class="exchange__title">Вы отдаете</div>
+                            <div class="exchange__text">Сумма</div>
+                            <div class="exchange__field">
+                                <input type="text" class="exchange__sum" placeholder="1000.00">
+                                <span class="exchange__currency">
+                                    <img src="./img/sber.svg" alt="sberbank"> 
+                                    <div class="exchange__name">rub</div>
+                                    <img src="./img/vector.svg" alt="vector" class="exchange__vector">
+                                </span>
                             </div>
                         </div>
+                        <img class="exchange__arrows" src="./img/arrows.svg" alt="arrows">
+                        <div class="exchange exchange__get">
+                            <div class="exchange__title">Вы получете <span class="exchange__commission">c учетом комиссии ПС (0.5%)</span></div>
+                            <div class="exchange__text">Сумма</div>
+                            <div class="exchange__field">
+                                <input type="text" class="exchange__sum" placeholder="1000.00">
+                                <div class="exchange__currency">
+                                    <img src="./img/qiwi.svg" alt="qiwi">
+                                    <div class="exchange__name">rub</div>
+                                    <img src="./img/vector.svg" alt="vector" class="exchange__vector">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="exchange__btn">Обменять</button>
                     </div>
-                    <button class="exchange__btn">Обменять</button>
+                    <div class="block2"></div>
+                    <div class="block3"></div>
                 </div>
-                <div class="block2"></div>
-                <div class="block3"></div>
             </div>
+        </section>
+        <section class="adv">
+            <div class="container">
+                <article class="adv__cards">
+                    <div class="adv__card">
+                        <img src="./img/security.png" alt="security button" class="adv__img">
+                        <h3 class="adv__title">Безопасность</h3>
+                        <p class="adv__descr">Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!</p>
+                    </div>
+                    <div class="adv__card">
+                        <img src="./img/refers.png" alt="refers button" class="adv__img">
+                        <h3 class="adv__title">Реферальная система</h3>
+                        <p class="adv__descr">На сервисе работает партнерская программа , за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.</p>
+                    </div>
+                    <div class="adv__card">
+                        <img src="./img/support.png" alt="support button" class="adv__img">
+                        <h3 class="adv__title">Онлайн поддержка</h3>
+                        <p class="adv__descr">Четыре вида поддержки для наших клиентов: Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).</p>
+                    </div>
+                </article>
+                <article class="history">
+                    <div class="history__text">
+                        <h2 class="history__title">Сервис обмена электронных <span class="nowrap">валют с 5-летней</span> историей</h2>
+                        <p class="history__descr">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</p>
+                    </div>
+                    <div class="history__wrapper-img">
+                        <img class="history__img" src="./img/exchange.png" alt="money exchange">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="currency">
+            <div class="container">
+                <h2 class="currency__title">Резерв валюты</h2>
+                <div class="currency__cards">
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/yawallet.svg" alt="yandex wallet icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">Yandex RUB</div>
+                            <div class="currency__money-sum">900549</div>
+                        </div>
+                    </div>
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/eth.svg" alt="ethereum icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">Ethereum ETH</div>
+                            <div class="currency__money-sum">123</div>
+                        </div>
+                    </div>
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/btc.svg" alt="bitcoin icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">Bitcoin BTC</div>
+                            <div class="currency__money-sum">0.63333439</div>
+                        </div>
+                    </div>
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/sbericon.svg" alt="sberbank icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">Сбербанк RUB</div>
+                            <div class="currency__money-sum">142666</div>
+                        </div>
+                    </div>
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/privat.svg" alt="privatbank icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">Приват 24 UAH</div>
+                            <div class="currency__money-sum">142666</div>
+                        </div>
+                    </div>
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/paypal.svg" alt="paypal icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">PayPal USD</div>
+                            <div class="currency__money-sum">5139.58</div>
+                        </div>
+                    </div>
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/pm.svg" alt="PM icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">PM USD</div>
+                            <div class="currency__money-sum">3192.22</div>
+                        </div>
+                    </div>
+                    <div class="currency__card">
+                        <div class="currency__card-img"><img src="./img/qiwiicon.svg" alt="qiwi icon"></div>
+                        <div class="currency__money">
+                            <div class="currency__money-title">Qiwi RUB</div>
+                            <div class="currency__money-sum">99243.321</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
-    </section>
     </div>
     <script src="js/main.js"></script>
 </body>
