@@ -1,11 +1,13 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now"
+@import "./swiper-full.scss"
 @import "fonts"
 @import "colors"
-
 
 /*=============================Common=============================================================*/
 *
     box-sizing: border-box
+    margin: 0
+    padding: 0
     
 #wrapper
     width: 100%
@@ -43,6 +45,10 @@ h2
 
 .nowrap
     white-space: nowrap
+
+// .swiper-container
+//     width: 600px
+//     height: 300px
 
 /*================================Header========================================================*/
 .header
@@ -301,3 +307,48 @@ h2
             line-height: 155.5%
             color: $dark-purple
 
+.review
+    padding-bottom: 6%
+    &__title
+        line-height: 132.4%
+
+    &__cards
+        margin-top: 10.4%
+
+    &__card
+        display: flex
+        flex-direction: column
+        // padding-top: 19.3
+        height: 200px
+
+    &__info
+        margin-top: auto
+        // margin-bottom: 9.8%
+
+    &__text
+        font-size: 1.8rem
+        line-height: 166%
+        // margin-bottom: 11.9%
+
+    &__author
+        font-size: 2rem
+        line-height: 155.5%
+        color: $dark-purple
+        margin-right: 3rem
+
+    &__date
+        font-size: 14px
+        line-height: 17px
+        color: $light-purple
+
+    &__navigation
+        display: flex
+        justify-content: flex-end
+        margin-top: 4.5rem
+
+.swiper-button-prev
+    cursor: pointer
+    margin-right: 2.3rem
+    
+.swiper-button-next
+    cursor: pointer

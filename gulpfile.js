@@ -85,7 +85,8 @@ function styles() {
 
 //Функция для преобразования js скриптов
 function scripts() {
-    return gulp.src('./src/js/**/*.js')
+    // return gulp.src('./src/js/**/*.js')
+    return gulp.src(['./src/js/swiper.min.js', './src/js/main.js'])
         .pipe(concat('main.js'))
         //Если по умолчанию он просто минифицирует код js, при параметре toplevel:true, код становить просто не читаемым. Обратного преобразования нет
         // .pipe(uglify({

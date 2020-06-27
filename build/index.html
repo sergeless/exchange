@@ -11,7 +11,7 @@
 <body>
     <div id="wrapper">
         <header class="header">
-            <a href="#" class="logo"><img src="./img/logo.svg" alt="MoneyExChange"></a>
+            <a href="#" class="logo"><img src="img/logo.svg" alt="MoneyExChange"></a>
             <nav class="menu">
                 <a class="menu__link" href="#">Компания</a>
                 <a class="menu__link" href="#">Блог</a>
@@ -42,7 +42,7 @@
                                 </span>
                             </div>
                         </div>
-                        <img class="exchange__arrows" src="./img/arrows.svg" alt="arrows">
+                        <img class="exchange__arrows" src="../img/arrows.svg" alt="arrows">
                         <div class="exchange exchange__get">
                             <div class="exchange__title">Вы получете <span class="exchange__commission">c учетом комиссии ПС (0.5%)</span></div>
                             <div class="exchange__text">Сумма</div>
@@ -155,9 +155,54 @@
                 </div>
             </div>
         </section>
-
+        <section class="review">
+            <div class="container">
+                <h2 class="review__title">Что клиенты говорят о нас</h2>
+                <div class="swiper-container">
+                    <div class="review__cards swiper-wrapper">
+                        <div class="review__card swiper-slide">
+                            <p class="review__text">Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.</p>
+                            <p class="review__info">
+                                <span class="review__author">Jacob Robertson</span>
+                                <span class="review__date">20.02.2020, 12:10</span>
+                            </p>
+                        </div>
+                        <div class="review__card swiper-slide">
+                            <p class="review__text">3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!</p>
+                            <p class="review__info">
+                                <span class="review__author">Morris Robertson</span>
+                                <span class="review__date">17.02.2020, 18:51</span>
+                            </p>
+                        </div>
+                        <div class="review__card swiper-slide">
+                            <p class="review__text">3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!</p>
+                            <p class="review__info">
+                                <span class="review__author">Michael Robson</span>
+                                <span class="review__date">17.02.2020, 18:51</span>
+                            </p>
+                        </div>
+                        <div class="review__card swiper-slide">
+                            <p class="review__text">3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!</p>
+                            <p class="review__info">
+                                <span class="review__author">Ronald MacLoud</span>
+                                <span class="review__date">17.02.2020, 18:51</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="review__navigation">
+                        <div class="swiper-button-prev">
+                            <img class="review__img-prev" src="./img/arrow-prev.svg" alt="left arrow">
+                        </div>
+                        <div class="review__btns swiper-button-next">
+                            <img class="review__img-next" src="./img/arrow-next.svg" alt="rigth arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
