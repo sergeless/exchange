@@ -1150,7 +1150,7 @@ h2 {
   max-width: 1238px;
   margin: auto;
   background: url("../img/begin-bg.png") no-repeat top center;
-  padding: 6.25% 0 4%;
+  padding: 6.25% 0 6.25%;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: end;
